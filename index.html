@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📋 Student Task Tracker</h1>
+
+<div class="form">
+  <input type="text" id="title" placeholder="Task Title">
+  <input type="date" id="dueDate">
+  <select id="status">
+    <option value="Pending">Pending</option>
+    <option value="Completed">Completed</option>
+  </select>
+  <button id="submitBtn">Add Task</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Due Date</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="taskList"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
